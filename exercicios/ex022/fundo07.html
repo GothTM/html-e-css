@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fundo 4</title>
+    <title>Alinhamento Vertical</title>
     <style>
         div#fora {
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
             position: relative;
             height: 98vh;
             background-color: blueviolet;
@@ -14,6 +16,8 @@
         }
 
         div#dentro {
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
             position: absolute;
             height: 200px;
             width: 300px;
@@ -22,6 +26,13 @@
             top: 50%;
             transform: translate(-50%, -50%);
         }
+
+        /*
+        translate: 1° valor - +(mexe pra direita), -(mexe pra esquerda)
+        2° valor - +(mexe pra baixo), - (mexe pra cima)
+        Tudo aquilo que armazena algo (container): position relative
+        Tudo aquilo que está dentro de algo (content): position absolute
+        */
     </style>
 </head>
 <body>
