@@ -18,6 +18,7 @@
         caption {
             font-size: 1.5em;
             font-weight: bolder;
+            padding: 5px;
         }
 
         td, th {
@@ -36,11 +37,11 @@
         <thead>
             <th scope="col">Grupos</th>
             <th scope="col">Nomes</th>
-            <th scope="col" colspan="3">Filmes</th>
+            <th scope="colgroup" colspan="3">Filmes</th>
         </thead>
         <tbody>
         <tr>
-            <th scope="row" rowspan="3">Mulheres</th>
+            <th scope="rowgroup" rowspan="3">Mulheres</th>
             <td>Ana Maria Santos</td>
             <td>Alien</td>
             <td>Rambo</td>
@@ -59,7 +60,7 @@
             <td>Big Hero</td>
         </tr>
         <tr>
-            <th scope="row" rowspan="3">Homens</th>
+            <th scope="rowgroup" rowspan="3">Homens</th>
             <td>Bruno Mendonça</td>
             <td>Intocáveis</td>
             <td>Amnésia</td>
@@ -78,6 +79,10 @@
             <td>Toy Story</td>
         </tr>
         </tbody>
+        <tfoot>
+            <th colspan="4" scope="row">Total</th>
+            <td>1000</td>
+        </tfoot>
     </table>
 </body>
 </html>

@@ -16,7 +16,11 @@
             border: 1px solid black;
             padding: 8px;
             text-align: center;
-            vertical-align: auto;
+            vertical-align: middle;
+        }
+
+        .numero {
+            text-align: right;
         }
 
         a {
@@ -26,6 +30,7 @@
         }
 
         a:hover {
+            text-decoration: underline;
             background: lightcyan;
         }
     </style>
@@ -38,27 +43,34 @@
     <p><a href="tabela005.html">5º Demonstração de Tabela</a></p>
     <p><a href="tabela006.html">6° Demonstração de Tabela</a></p>
     <p><a href="tabela007.html">7° Demonstração de Tabela</a></p>
+    <!--
+        HIERARQUIA BÁSICA
+        table - Tabela;
+        table row (tr) - linhas;
+        table header (th) - cabeçalho;
+        table data (td) - dados da tabela.
+    -->
     <table>
         <tbody>
-            <tr>
-                <td>A1</td>
-                <td>B1</td>
-                <td>C1</td>
+            <tr> <!--1° linha-->
+                <td>A1</td><!--1° célula da 1° linha-->
+                <td>B1</td><!--2° célula da 1° linha-->
+                <td>C1</td><!--3° célula da 1° linha-->
             </tr>
-            <tr>
-                <td>A2</td>
-                <td>B2</td>
-                <td>C2</td>
+            <tr> <!--2° linha-->
+                <td>A2</td><!--1° célula da 2° linha-->
+                <td>B2</td><!--2° célula da 2° linha-->
+                <td class="numero">C2</td><!--3° célula da 2° linha-->
             </tr>
-            <tr>
-                <td>A3</td>
-                <td>B3</td>
-                <td>C3</td>
+            <tr><!--3° linha-->
+                <td>A3</td><!--1° célula da 3° linha-->
+                <td>B3</td><!--2° célula da 3° linha-->
+                <td class="numero">C3</td><!--3° célula da 3° linha-->
             </tr>
-            <tr>
-                <td>A4</td>
-                <td>B4</td>
-                <td>C4</td>
+            <tr><!--4° linha-->
+                <td>A4</td><!--1° célula da 4° linha-->
+                <td>B4</td><!--2° célula da 4° linha-->
+                <td>C4</td><!--3° célula da 4°linha-->
             </tr>
         </tbody>
     </table>

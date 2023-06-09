@@ -21,7 +21,7 @@
             color: white;
         }
 
-        th {
+        thead {
             background-color: lightslategray;
             color: white;
             font-weight: bolder;
@@ -31,6 +31,12 @@
             border: 1px solid black;
             padding: 5px;
             text-align: center;
+        }
+
+        .media {
+            background-color: lightslategray;
+            color: white;
+            font-weight: bolder;
         }
     </style>
 </head>
@@ -44,7 +50,7 @@
             <tr>
             <th scope="col" rowspan="2">Área</th>
             <th scope="col" rowspan="2">Disciplinas</th>
-            <th scope="col" colspan="2">Notas</th>
+            <th scope="colgroup" colspan="2">Notas</th>
             <th scope="col" rowspan="2">Média</th>
             </tr>
             <tr>
@@ -54,7 +60,7 @@
         </thead>
         <tbody>
             <tr>
-                <td rowspan="4">Exatas</td>
+                <th rowspan="4" scope="rowgroup">Exatas</th>
                 <td>Matemática</td>
                 <td>8.0</td>
                 <td>6.0</td>
@@ -79,11 +85,11 @@
                 <td>7.5</td>
             </tr>
             <tr>
-                <th scope="row" colspan="4">Média de Exatas</th>
+                <th scope="row" colspan="4" class="media">Média de Exatas</th>
                 <td>8.0</td>
             </tr>
             <tr>
-                <td rowspan="2">Humanas</td>
+                <th rowspan="2" scope="rowgroup">Humanas</th>
                 <td>História</td>
                 <td>9.0</td>
                 <td>6.0</td>
@@ -96,7 +102,7 @@
                 <td>9.0</td>
             </tr>
             <tr>
-                <th scope="row" colspan="4">Média de Humanas</th>
+                <th scope="row" colspan="4" class="media">Média de Humanas</th>
                 <td>9.0</td>
             </tr>
         </tbody>

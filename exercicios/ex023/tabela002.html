@@ -11,8 +11,9 @@
         }
 
         table {
-            width: 600px;
+            width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         caption {
@@ -22,9 +23,16 @@
             padding: 5px;
         }
 
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: black;
+        }
+
         th, td {
             border: 1px solid black;
             text-align: center;
+            padding: 8px;
         }
 
         tbody > tr:nth-child(odd) {
@@ -38,6 +46,7 @@
     </style>
 </head>
 <body>
+    <h1>Uso de tabelas grandes</h1>
     <table>
         <caption>
             População das Unidades Federativas
