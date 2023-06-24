@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários em HTML5</title>
+</head>
+<body>
+    <!--
+        input: Cria caixas de texto e botões
+        method: Define se é método GET ou POST
+        action: Define para onde serão enviados os dados captados pelo formulário
+        label: Conecta caixa de texto e id
+        GET: Método para formulários mais abertos, aparece na URL
+        POST: Método para formulários mais fechados, não aparece na URL
+    -->
+    <h1>Não Semântico</h1>
+    <form autocomplete="off">
+        <p>Nome: 
+            <input type="text" name="cadastro"></p>
+        <p>Sobrenome: 
+            <input type="text" name="cadastro1" id="cadastro01"></p>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+
+    <h1>Semântico</h1>
+    <form method="get" action="cadastro.php">
+        <label for="icadastroformulario">Nome:</label>
+        <input type="text" name="cadastro" id="icadastroformulario">
+        <input type="submit" value="Enviar">
+    </form>
+
+    <h1>Métodos GET e POST</h1>
+    <p>
+        <form method="get" action="cadastro.php">
+            <label for="cadastroformulario3">Nome (GET):</label>
+            <input type="text" name="cadastro" id="cadastroformulario3">
+            <input type="submit" value="Enviar">
+        </form>
+    </p>
+
+    <p>
+        <form method="post" action="cadastro.php">
+            <label for="cadastroformulario4">Nome (POST):</label>
+            <input type="text" name="cadastro" id="cadastroformulario4">
+            <input type="submit" value="Enviar">
+        </form>
+    </p>
+</body>
+</html>
