@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Prático 1</title>
+</head>
+<body>
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="i-foto">Foto do Perfil</label>
+            <input type="file" name="foto" id="i-foto" accept="image/*">
+        </p>
+        <p>
+            <label for="i-idade">Idade:</label>
+            <input type="number" name="idade" id="i-idade" min="1" max="120" value="20">
+        </p>
+        <p>
+            <fieldset style="width: 100px;">
+                <legend>Sexo</legend>
+                <input type="radio" name="sex" id="i-sexmasc" checked>
+                <label for="i-sexmasc">Masculino</label>
+                <input type="radio" name="sex" id="i-sexfem">
+                <label for="i-sexfem">Feminino</label>
+        </p>
+        </fieldset>
+        <p>
+            <label for="i-telefone">Telefone:</label>
+            <input type="tel" name="telefone" id="i-telefone" pattern="\([0-9] {2}\) ([\s]) [0-9] {4, 6} - [0-9] {4}" placeholder="(XX) XXXX-XXXX">
+        </p>
+        <p>
+            <label for="i-email">E-mail:</label>
+            <input type="email" name="email" id="i-email" size="30" maxlength="50">
+        </p>
+        <p>
+            <label for="i-senha">senha:</label>
+            <input type="password" name="senha" id="i-senha" minlength="3" maxlength="8" size="8">
+        </p>
+        <p>
+            <label for="i-mes">Mês de aniversário:</label>
+            <input type="month" name="mes" id="i-mes">
+        </p>
+        <p>
+            <label for="i-data">Dia da compra:</label>
+            <input type="date" name="data" id="i-data">
+        </p>
+        <p>
+            <label for="i-hora">Hora da compra:</label>
+            <input type="time" name="hora" id="i-hora">
+        </p>
+        <p>
+            <label for="i-cor">Cor:</label>
+            <input type="color" name="cor" id="i-cor" value="#000000">
+        </p>
+        <p>
+            <label for="i-sat">Nível de satisfação:</label>
+            <input type="range" name="sat" id="i-sat" min="0" max="4" value="2">
+        </p>
+        <p>
+            <input type="checkbox" name="termos" id="i-termos">
+            <label for="i-termos">Aceito os <a href="termos.html">termos de uso</a></label>
+        </p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+</body>
+</html>
