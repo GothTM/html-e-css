@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Prático 3</title>
+</head>
+<body>
+    <h1>Formulário Prático 3</h1>
+    <form action="cadastro.php" method="get" oninput="itotal.value = Number(ipreco.value) * Number(iquantidade.value)">
+        <p>
+            <label for="iproduto">Produto:</label>
+            <input type="text" name="produto" id="iproduto">
+        </p>
+        <p>
+            <label for="ipreco">Preço: R$</label>
+            <input type="number" name="preco" id="ipreco">
+        </p>
+        <p>
+            <label for="iquantidade">Quantidade:</label>
+            <input type="number" name="quantidade" id="iquantidade">
+        </p>
+        <p>
+            <label for="itotal">Total: R$</label>
+            <output name="total" id="itotal">0</output>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

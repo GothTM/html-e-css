@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Prático 2</title>
+</head>
+<body>
+    <h1>Formulário Prático 2</h1>
+    <form action="cadastro.php" method="get">
+        <p>
+            <label for="imodelo">Modelo do Celular</label>
+            <select name="modelo" id="imodelo">
+                <option value="">Escolha...</option>
+                <optgroup label="Samsung">
+                    <option value="SGXYS10128">Samsung Galaxy S10 128GB</option>
+                    <option value="SGXYS20128">Samsung Galaxy S20 256GB</option>
+                    <option value="SN10128">Samsung Note10 128GB</option>
+                </optgroup>
+                <optgroup label="Motorola">
+                    <option value="MG50256">Moto G50 256GB</option>
+                    <option value="MG20128">Moto G20 128GB</option>
+                    <option value="MG30128">Moto G30 128GB</option>
+                </optgroup>
+        </select>
+    </p>
+        <p>
+            <label for="idescricao">Especificações Técnicas</label><br>
+            <textarea name="descricao" id="idescricao" cols="30" rows="10"></textarea>
+        </p>
+        <p>
+            <label for="iprofissao">Profissão</label>
+            <input type="text" name="profissao" id="iprofissao" list="lstprofissao">
+            <datalist id="lstprofissao">
+                <optgroup label="Ciências Exatas">
+                    <option value="ADS">Analista de Sistemas</option>
+                    <option value="MAT">Matemático</option>
+                    <option value="CONT">Contador</option>
+                </optgroup>
+                <optgroup label="Ciências Humanas">
+                    <option value="PROF">Professor</option>
+                    <option value="HIST">Historiador</option>
+                    <option value="GEO">Geógrafo</option>
+                    </optgroup>
+            </datalist>
+        </p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+</body>
+</html>
